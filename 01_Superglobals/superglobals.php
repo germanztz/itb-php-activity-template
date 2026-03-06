@@ -29,37 +29,37 @@
         echo "<h3>_POST:</h3>";
         echo "<pre>";
         var_dump($_POST);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_GET:</h3>";
         echo "<pre>";
         var_dump($_GET);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_REQUEST:</h3>";
         echo "<pre>";
         var_dump($_REQUEST);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_FILES:</h3>";
         echo "<pre>";
         var_dump($_FILES);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_COOKIE:</h3>";
         echo "<pre>";
         var_dump($_COOKIE);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_SESSION:</h3>";
         echo "<pre>";
         var_dump($_SESSION);
-        echo '</pre>';
+        echo "</pre>";
 
         echo "<h3>_SERVER:</h3>";
         echo "<pre>";
         var_dump($_SERVER);
-        echo '</pre>';        
+        echo "</pre>";        
         ?>
     </div>
 </body>
