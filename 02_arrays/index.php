@@ -27,67 +27,74 @@
     <div class="container">
         <pre>
 
-        // Els tipus de dades estructurats on emmagatzemar un conjunt de dades homogeni, arrays, es poden accedir mitjançant l’índex (que com és habitual, comença pel 0)
+// Els tipus de dades estructurats on emmagatzemar un conjunt de dades homogeni, arrays, es poden accedir mitjançant l’índex (que com és habitual, comença pel 0)
 
-        $alumnes = array("Carles", "Laura", "Víctor", "Sílvia"); 
-        echo $alumnes[1];
+$alumnes = array("Carles", "Laura", "Víctor", "Sílvia"); 
+echo $alumnes[1];
+_______________________________________________________________
+
+<?php
+    $alumnes = array("Carles", "Laura", "Víctor", "Sílvia"); 
+    echo $alumnes[1];
+?>
+
+===============================================================
+
+// Recorregut d'un array amb foreach
+
+$alumnes = ["Carles", "Laura", "Víctor", "Sílvia"];
+foreach ($alumnes as $alumne) {
+    echo "$alumne&lt;br&gt;";
+}
+
+_______________________________________________________________
+
+<?php
+    $alumnes = ["Carles", "Laura", "Víctor", "Sílvia"];
+
+    foreach ($alumnes as $alumne) {
+        echo "$alumne<br>";
+    }
+?>
+
+===============================================================
+
+$bici = array("marca"=>"Cannondale", "model"=>"Topstone Carbon 4", "any"=>2023);
+var_dump($bici);
+echo "Marca: " . $bici["marca"];
+
+_______________________________________________________________
+
+<?php
+    $bici = array("marca"=>"Cannondale", "model"=>"Topstone Carbon 4", "any"=>2023);
+    var_dump($bici);
+    echo "<br>Marca: " . $bici["marca"];
+?>
+
+===============================================================
+
+function fun1() { echo "Primera funció!"; }
+function fun2() { echo "Segona funció!"; }
+function fun3() { echo "Tercera funció!"; }
+
+// Guardem els noms de les funcions com a cadenes (strings)
+$arrayDeFuncions = array("f1" => "fun1", "f2" => "fun2", "f3" => "fun3");
+
+$arrayDeFuncions["f2"]();
+
+_______________________________________________________________
+
+<?php
+    function fun1() { echo "Primera funció!"; }
+    function fun2() { echo "Segona funció!"; }
+    function fun3() { echo "Tercera funció!"; }
+
+    // Guardem els noms de les funcions com a cadenes (strings)
+    $arrayDeFuncions = array("f1" => "fun1", "f2" => "fun2", "f3" => "fun3");
+
+    $arrayDeFuncions["f2"]();
+?>
         </pre>
-        <?php
-
-        $alumnes = array("Carles", "Laura", "Víctor", "Sílvia"); 
-        echo $alumnes[1];
-        ?>
-
-        <pre>
-
-        // Recorregut d'un array amb foreach
-
-        $alumnes = ["Carles", "Laura", "Víctor", "Sílvia"];
-        foreach ($alumnes as $alumne) {
-            echo "$alumne&lt;br&gt;";
-        }
-        </pre>
-        <?php
-        $alumnes = ["Carles", "Laura", "Víctor", "Sílvia"];
-
-        foreach ($alumnes as $alumne) {
-            echo "$alumne<br>";
-        }
-
-        ?>
-
-        <pre>
-            $bici = array("marca"=>"Cannondale", "model"=>"Topstone Carbon 4", "any"=>2023);
-            var_dump($bici);
-            echo "Marca: " . $bici["marca"];
-        </pre>
-
-        <?php
-            $bici = array("marca"=>"Cannondale", "model"=>"Topstone Carbon 4", "any"=>2023);
-            var_dump($bici);
-            echo "<br>Marca: " . $bici["marca"];
-        ?>
-
-        <pre>
-            function fun1() { echo "Primera funció!"; }
-            function fun2() { echo "Segona funció!"; }
-            function fun3() { echo "Tercera funció!"; }
-
-            // Guardem els noms de les funcions com a cadenes (strings)
-            $arrayDeFuncions = array("f1" => "fun1", "f2" => "fun2", "f3" => "fun3");
-
-            $arrayDeFuncions["f2"]();
-        </pre>
-        <?php
-            function fun1() { echo "Primera funció!"; }
-            function fun2() { echo "Segona funció!"; }
-            function fun3() { echo "Tercera funció!"; }
-
-            // Guardem els noms de les funcions com a cadenes (strings)
-            $arrayDeFuncions = array("f1" => "fun1", "f2" => "fun2", "f3" => "fun3");
-
-            $arrayDeFuncions["f2"]();
-        ?>
     </div>
 </body>
 </html>
