@@ -24,9 +24,9 @@
 </head>
 <body>
     <div class="container">
+    <?php session_start(); ?>
+    <pre>$_SESSION: <?php var_dump($_SESSION); ?></pre>
     <?php
-    session_start();
-
     if(isset($_SESSION['missatge'])) { 
         // Si hi ha un missatge a la sessió, el mostrem i després el borrem
         echo "<div><p>" . $_SESSION['missatge'] . "</p></div>";
@@ -76,7 +76,6 @@
 
     <?php } ?>
     </div>
-    <pre>$_SESSION: <?php var_dump($_SESSION); ?></pre>
 
 </body>
 </html>
