@@ -25,6 +25,11 @@
 <body>
     <div class="container">
         <?php
+
+        if(!isset($_GET['get_test'])) {
+            header('Location: superglobals.php?get_test=test_value');
+        }
+        $variable = "Hola, sóc una variable de prova!";
         // Dump the variable for debugging
         echo "<h3>_POST:</h3>";
         echo "<pre>";
@@ -55,6 +60,12 @@
         echo "<pre>";
         var_dump($_SESSION);
         echo "</pre>";
+
+        echo "<h3>GLOBALS:</h3>";
+        echo "<pre>";
+        var_dump($GLOBALS);
+        echo "</pre>";
+
 
         echo "<h3>_SERVER:</h3>";
         echo "<pre>";
